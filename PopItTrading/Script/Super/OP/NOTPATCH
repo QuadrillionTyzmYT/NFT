@@ -1,0 +1,25 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window  = Library.CreateLib("NFT Only - Pinokyo At Top", "Synapse")
+local Tab     = Window:NewTab("Main Scripts")
+local Section = Tab:NewSection("Buy NFT Using (CASH)")
+Section:NewButton("Buy Ben", "Buy Ben", function()
+	local args = {
+		[1] = "Trading Ben"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+Section:NewButton("Buy XOX", "Buy Munneh", function()
+	local args = {
+		[1] = "XOX"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
+Section:NewButton("Buy Lenay", "Buy Mommeh Long Legs", function()
+	local args = {
+		[1] = "Lenay"
+	}
+
+	game:GetService("ReplicatedStorage").RemoteEvents.BuyItemCash:FireServer(unpack(args))
+end)
